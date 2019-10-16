@@ -18,10 +18,6 @@ class TodoListViewController: UITableViewController {
         // Do any additional setup after loading the view.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        
-    }
 
     //MARK TableView Datasource Methods
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -30,13 +26,14 @@ class TodoListViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ToDoItemCell", for: indexPath)
+        
         cell.textLabel?.text = itemArray[indexPath.row]
         return cell
     }
     
     // MARK - TableView Delegate Methods
     
-    override func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print(indexPath.row)
         
         if tableView.cellForRow(at: indexPath)?.accessoryType == .checkmark {
@@ -44,11 +41,15 @@ class TodoListViewController: UITableViewController {
         }else {
             tableView.cellForRow(at: indexPath)?.accessoryType = .checkmark
         }
-        
-        
         tableView.deselectRow(at: indexPath, animated: true)
-        
     }
+    
+    //MARK Add New Items
+    
+    
+    @IBAction func addButtonPressed(_ sender: UIBarButtonItem) {
+    }
+    
     
     
 }
