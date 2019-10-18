@@ -33,8 +33,9 @@ class TodoListViewController: UITableViewController {
         
         let cell = UITableViewCell(style: .default, reuseIdentifier: "ToDoItemCell")
         
-        //let cell = tableView.dequeueReusableCell(withIdentifier: "ToDoItemCell", for: indexPath)
-        //cell.textLabel?.text = itemArray[indexPath.row]
+        tableView.dequeueReusableCell(withIdentifier: "ToDoItemCell", for: indexPath)
+        cell.textLabel?.text = itemArray[indexPath.row]
+        
         return cell
     }
     
@@ -64,13 +65,15 @@ class TodoListViewController: UITableViewController {
             print("Added item pressed \(textField.text!)")
             self.itemArray.append(textField.text!)
             
+            //MARK : Added to Defaults / Reload Data
+            
             self.defaults.set(self.itemArray, forKey: "ToDoListArray")
             
             self.tableView.reloadData()
             
         }
         alert.addTextField { (alertTextField) in
-            alertTextField.placeholder = "Create new Item"
+            alertTextField.placeholder = "Create Item"
             textField = alertTextField
         }
         
