@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6D3A1660235C9DEB005AB4E6 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D3A165F235C9DEB005AB4E6 /* Item.swift */; };
 		ADC77DF623563B2F00E15A5C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC77DF523563B2F00E15A5C /* AppDelegate.swift */; };
 		ADC77DF823563B2F00E15A5C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC77DF723563B2F00E15A5C /* SceneDelegate.swift */; };
 		ADC77DFA23563B2F00E15A5C /* TodoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC77DF923563B2F00E15A5C /* TodoListViewController.swift */; };
@@ -18,7 +17,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6D3A165F235C9DEB005AB4E6 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Item.swift; path = "Data Model/Item.swift"; sourceTree = "<group>"; };
 		ADC77DF223563B2F00E15A5C /* Todoey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Todoey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADC77DF523563B2F00E15A5C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ADC77DF723563B2F00E15A5C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -60,7 +58,6 @@
 		ADC77DF423563B2F00E15A5C /* Todoey */ = {
 			isa = PBXGroup;
 			children = (
-				6D3A165F235C9DEB005AB4E6 /* Item.swift */,
 				ADC77DF523563B2F00E15A5C /* AppDelegate.swift */,
 				ADC77DF723563B2F00E15A5C /* SceneDelegate.swift */,
 				ADC77DF923563B2F00E15A5C /* TodoListViewController.swift */,
@@ -144,7 +141,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6D3A1660235C9DEB005AB4E6 /* Item.swift in Sources */,
 				ADC77DFA23563B2F00E15A5C /* TodoListViewController.swift in Sources */,
 				ADC77DF623563B2F00E15A5C /* AppDelegate.swift in Sources */,
 				ADC77DF823563B2F00E15A5C /* SceneDelegate.swift in Sources */,
